@@ -1,0 +1,56 @@
+{{> header }}
+<br>
+<div class="bigProduct">
+    <div style="margin-left: 5%; margin-right: 5%;">
+      {{# each Product }}
+      {{ var }}
+      <span>
+        <h2 class="hidden itemTitle">{{ this.title }}</h2>
+        <p class="hidden itemImage"><img id="modalImg" src="{{ this.imagePath }}" alt="{{ this.description }}">
+        <h3 class="hidden itemDescription">{{ this.description }}</h3>
+        </span>
+      {{/each}}
+    </div>
+
+    <script>
+      $( "span p" ).first().removeClass( "hidden" );
+      $( "span h2" ).first().removeClass( "hidden" );
+      $( "span h3" ).first().removeClass( "hidden" );
+    </script>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <div class="closeX">x</div>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+    <script>
+      var modal = document.getElementById('myModal');
+
+      var img = document.getElementById('modalImg');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+
+      var span = document.getElementsByClassName("closeX")[0];
+
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+    </script>
+
+    <div class="itemButtons visible">
+      {{# each Product }}
+          <a href="/add-to-cart/{{this._id}}" class="btn btn-primary pull-right cap" role="button">{{ this.size }}  ${{ this.price }}</a>
+    <br />
+    <br />
+        {{/each}}
+    </div>
+</div>
+
+{{> footer }}

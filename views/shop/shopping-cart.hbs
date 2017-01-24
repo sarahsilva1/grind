@@ -1,0 +1,42 @@
+{{> header }}
+
+<!-- Checks if theres products objects -->
+{{# if products }}
+    <div class="row">
+            <ul class="list-group">
+                {{# each products }}
+                    <li class="list-group-item">
+                        <span class="badge">{{ this.qty }}</span>
+                        <strong>{{ this.item.title }} - {{ this.item.size}}</strong>
+                        <span class="label label-success">${{ this.price }}</span>
+                        <div class="btn-group">
+                            <button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown">Action <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/reduce/{{this.item._id}}">Reduce by 1</a></li>
+                                <li><a href="/increase/{{this.item._id}}">Increase by 1</a></li>
+                                <li><a href="/remove/{{this.item._id}}">Remove All</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                {{/each}}
+            </ul>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3 whiteText">
+            <strong>SubTotal: {{ cart.subTotalPrice }}</strong><br>
+            <strong>Tax: {{ cart.totalTaxPrice }}</strong><br>
+            <strong>Total: {{ cart.grandTotalPrice}}</strong><br>
+            <a href="/checkout" type="button" class="btn btn-success">Checkout</a>
+        </div>
+    </div>
+    <hr>
+{{ else }}
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3" style="text-align:center">
+            <h2>Your cart is empty...</h2>
+            <h3><i>for now.</i></h3>
+        </div>
+    </div>
+{{/if}}
+
+{{> footer }}

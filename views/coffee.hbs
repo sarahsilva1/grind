@@ -1,0 +1,30 @@
+{{> header }}
+
+<title>Coffee</title>
+
+<!-- Stripe functionality-->
+<!-- <div class="row">
+    <div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
+        <div id="success" class="alert alert-success" {{#if noMessages}}hidden{{/if}}>
+            {{ successMsg }}
+        </div>
+    </div>
+</div> -->
+<script> console.log('this works');</script>
+
+<h1>Coffee</h1>
+
+<div class="row">
+
+{{# each Product }}
+   <div class="col-md-4 ">
+       <div class="thumbnail" >
+         <center><a href="item/{{this.title}}"><img src="{{ this.imagePath }}" alt="..." class="img-responsive"></a><center>
+           <div class="caption">
+                 <a href="item/{{this.title}}"><h3>{{ this.title }}</h3></a>
+           </div>
+       </div>
+   </div>
+{{/each}}
+
+{{> footer }}

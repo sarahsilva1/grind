@@ -1,0 +1,481 @@
+body {
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+  font-family: 'Overpass';
+  background-color: #efc999;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+h2{
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: 'Overpass';
+}
+
+h3{
+  font-size: 20px !important;
+  font-family: 'Overpass';
+}
+
+h1{
+  font-size: 40px !important;
+  color: #6d99a3;
+  text-shadow: 2px 2px #ff0000;
+  text-align: center;
+  font-family: 'Overpass';
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+
+    background: url('https://subtlepatterns.com/patterns/natural_paper.png') no-repeat;
+ /*background: url('../Coffee-Shot/Snapshots/Coffee-Shot.jpg') no-repeat;*/
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade {
+   opacity: .5;
+}
+.bigProduct{
+width: 80%;
+height: 90%;
+margin: 10%;
+border-style: solid;
+border-color: #6d99a3;
+}
+
+#mainTitle {
+  padding-top: 100px;
+  font-family: 'Bungee Shade';
+  font-size: 80px !important;
+  color: #6d99a3;
+  /*blueish*/
+  text-shadow: 3px 3px #FA5B34;
+  /*orangeish*/
+  text-align: center;
+  margin-bottom: 200px;
+
+}
+
+#homeVideo {
+  font-weight:100;
+  padding-top: 150px;
+  color: black;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+  font-size: 60px !important;
+}
+
+#homeVideo button {
+  display: block;
+  /*width: 80%;*/
+  padding: .4rem;
+  border: none;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: black;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s background;
+}
+#homeVideo button:hover {
+   background: rgba(0,0,0,0.5);
+}
+
+
+a:hover{
+  /*background:rgba(0,0,0,0.9);*/
+}
+
+@media screen and (max-width: 500px) {
+  /*div{width:70%;}*/
+}
+@media screen and (max-device-width: 100%) {
+  html { background: url(../Coffee-Shot/Snapshots/Coffee-Shot.jpg) #000 no-repeat center center fixed; }
+  /*#bgvid { display: none; }*/
+}
+
+
+
+
+
+
+
+
+.cap {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.indented {
+  font-size: 16px;
+  text-indent: 20%;
+  line-height: 230%;
+}
+
+.aboutText {
+  font-size: 15px;
+  margin-top: 5%;
+  text-indent: 50px;
+  margin-bottom: 5%;
+  line-height: 135%;
+  color: white;
+
+}
+
+.homeText {
+  /*background-color: : #00b7ff !important;*/
+  color: #6d99a3;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+.homeTitle {
+  /*background-color: : #00b7ff !important;*/
+  padding-top: 20%;
+  color: #6d99a3;
+  font-size: 80px;
+}
+
+#homeImage{
+height: 90%;
+width: 90%;
+}
+
+
+.allBodyContent {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.mapContainer{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*float: left;*/
+}
+
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+
+#locationText {
+  font-size: 24px;
+  text-align: center;
+  padding-right: 300px;
+
+}
+
+#locations {
+  font-size: 24px;
+  text-align: center;
+  padding-left: 100px;
+}
+
+.thumbnail{
+  border-radius: 10px;
+}
+
+.thumbnail img {
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.thumbnail a img {
+  height: 200px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.thumbnail .description {
+    color: #7f7f7f;
+    overflow: hidden;
+    /*text-overflow: ellipsis;*/
+    /*black-space: nowrap;*/
+}
+.small_description {
+  text-indent: 20px;
+  color: gray;
+  overflow: hidden;
+  height: 100px;
+}
+.price {
+    font-weight: bold;
+    font-size: 16px;
+}
+.thumbnail .btn .btn-success {
+  color: #F39C12 !important;
+}
+
+h2{
+  text-align: center;
+  padding-bottom: 10px;
+}
+p {
+ line-height: 130%;
+ color: #6d99a3;
+ font-family: 'Overpass Mono';
+}
+
+p:link {
+  color: #6d99a3;
+}
+p:hover {
+  /*color: black;*/
+}
+a {
+  color: #6d99a3;
+  -webkit-transition:color .10s ease-in;
+   -moz-transition:color .10s ease-in;
+   -o-transition:color .10s ease-in;
+   transition:color .10s ease-in;
+}
+.homeText {
+  /*background-color: : #00b7ff !important;*/
+  color: #6d99a3;
+  font-size: 24px;
+  text-align: center;
+}
+.homeTitle {
+  /*background-color: : #00b7ff !important;*/
+  padding-top: 20%;
+  color: #6d99a3;
+  font-size: 80px;
+}
+
+.mapContainer{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*float: left;*/
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.list-group {
+  padding-top: 100px;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.dropdown .dropdown-menu a{
+  color: #777777 !important;
+}
+
+.userPages{
+  width: 50%;
+  text-align: center;
+}
+.itemImage{
+  text-align: center;
+}
+
+#modalImg {
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 95%;
+    transition: 0.3s;
+}
+
+#modalImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.closeX {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.itemTitle{
+  font-size: 36px;
+  text-align: center;
+}
+
+.itemDescription{
+  float:right;
+  font-size: 20px;
+  text-indent: 50px;
+  padding-bottom: 20px;
+}
+
+.itemButtons{
+  font-size: 20px;
+  /*clear: left;*/
+  clear: right;
+  padding-bottom: 20px;
+  /*float: right;*/
+  padding-right: 20%;
+  text-align:center;
+}
+
+a:hover {
+  color: #ffda8e;
+  text-decoration: none;
+}
+
+.main-container{
+  width: 80%;
+  min-width: 300px;
+  margin: 0 auto;
+  border-radius: 0.2em;
+  overflow: hidden;
+  background-color: #395873;
+  -webkit-box-shadow: 0 3px 10px 5px #6d99a3;
+  -moz-box-shadow: 0 3px 10px 5px #6d99a3;
+  -o-box-shadow: 0 3px 10px 5px #6d99a3;
+  box-shadow: 0 3px 10px 5px rgba(0,0,0,0.3);
+
+}
+.main-container:hover{
+  -webkit-box-shadow: 0 3px 10px 5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 3px 10px 5px rgba(0,0,0,0.5);
+  -o-box-shadow: 0 3px 10px 5px rgba(0,0,0,0.5);
+  box-shadow: 0 3px 10px 5px rgba(0,0,0,0.5);
+
+  transition: all 300ms ease-out;
+}
+
+.email-login-container{
+  margin: 1.5em;
+}
+
+input[type="text"], [type="password"],[type="button"] {
+  outline:none;
+}
+.input-box{
+  color: white;
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding-left: 0.8em;
+  margin-bottom: 2em;
+
+}
+
+.login-button{
+  color: rgba(255,255,255,0.5);
+  background-color: #6d99a3;
+  width: 100%;
+  height: 50px;
+  border:none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.login-button:hover{
+  background-color: red;
+  -webkit-transition: background-color 300ms ease-out ;
+    -moz-transition: background-color 300ms ease-out ;
+    -o-transition: background-color 300ms ease-out ;
+    transition: background-color 300ms ease-out ;
+}
